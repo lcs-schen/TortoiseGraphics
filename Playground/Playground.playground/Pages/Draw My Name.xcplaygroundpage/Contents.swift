@@ -24,36 +24,27 @@ canvas.drawing { t in
     //pen size is increased
     t.hideTortoise()
     
-    //Make turtle face to right like in GP Blocks
-    t.setH(90)
-    
-    
-    t.right(-50)
-    
-    t.uppercaseS()
-    t.lowercasea()
-    t.lowercasem()
-    
-    
-    t.setHeading(180) // Down
-    t.forward(184)
-    t.left(90)
-    t.penUp()
-    t.forward(80)
-    t.setH(0)
-    t.forward(270)
-//    t.right(-100)
+//    //Make turtle face to right like in GP Blocks
+//    t.setH(90)
+//    
+//    
+//    t.right(-50)
+//    
+//    t.uppercaseS()
+//    t.lowercasea()
+//    t.lowercasem()
+//    t.setHeading(180) // Down
+//    t.forward(184)
+//    t.left(90)
+//    t.penUp()
+//    t.forward(80)
+//    t.setH(0)
+//    t.forward(270)
+//    t.setH(0)
+//    t.right(-30)
 //    t.penDown()
-    t.setH(0)
-    t.right(-30)
-    t.penDown()
-//    t.right(-90)
-    t.uppercaseC()
-    t.lowercaseh()
-    t.lowercasee()
-    t.lowercasen()
-
-    
-
-    t.penSize(1)
+//    t.uppercaseC()
+//    t.lowercaseh()
+//    t.lowercasee()
+//    t.lowercasen()
 }

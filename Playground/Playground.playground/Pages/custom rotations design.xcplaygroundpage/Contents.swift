@@ -13,6 +13,16 @@ PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { turtle in
     
-    
+    // Draw 18 small circles rotated around the origin
+    for _ in 1...18 {
+        turtle.right(20)
+        
+        // Draw a small circle
+        for _ in 1...18 {
+            turtle.right(20)
+            turtle.forward(20)
+            
+        }
+    }
     
 }

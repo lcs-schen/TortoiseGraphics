@@ -8,92 +8,93 @@ public extension Tortoise {
         }
         self.penUp()
     }
-    
+
     func curve(withSides sidecount: Int, withSize size: Double, drawSides sideLimit: Int) {
-        
+
         self.penDown()
         for _ in 1...sideLimit {
             self.forward(size)
             self.right(360 / Double(sidecount))
         }
         self.penUp()
-    
+
     }
 
     func uppercaseS() {
-    
+
         //straight line
         self.curve(withSides: 3000000, withSize: 15, drawSides: 10)
-    
+
         //loop
         self.curve(withSides: -10, withSize: 7, drawSides: 4)
         self.curve(withSides: -20, withSize: 8, drawSides: 5)
-    
+
         //big curve
         self.curve(withSides: 65, withSize: 15, drawSides: 6)
         self.curve(withSides: 30, withSize: 7, drawSides: 15)
-    
+
         //turn
         self.curve(withSides: 30, withSize: 3, drawSides: 5)
-    
+
         //move around
         self.right(15)
-    
+
         //straight line
         self.curve(withSides: 300000, withSize: 3, drawSides: 40)
-        
+
     }
-    
+
     func lowercasea() {
         self.right(180)
-        
+
         //go downward circle
         self.curve(withSides: -30, withSize: 5, drawSides: 6)
         self.curve(withSides: -30, withSize: 3, drawSides: 6)
         self.curve(withSides: -30, withSize: 3, drawSides: 6)
-    
+
         //little thing at the bottom
         self.right(-45)
         self.curve(withSides: -30, withSize: 15, drawSides: 2)
         self.right(175)
-        
+
         //straight line
         self.curve(withSides: -100, withSize: 5, drawSides: 7)
-    
+
         self.right(45)
     }
-    
+
     func lowercasem() {
-    
+
         self.right(-145)
-        
+
         //go straight for the connection
         self.curve(withSides: 300000, withSize: 3, drawSides: 14)
-        
+
         //turn for the first straight line
         self.curve(withSides: 10, withSize: 5, drawSides: 4)
         self.curve(withSides: 300000, withSize: 3, drawSides: 12)
-        
+
         //go back
         self.right(180)
         self.curve(withSides: 300000, withSize: 3, drawSides: 7)
-        
+
         //turn for the second straight line
         self.curve(withSides: 10, withSize: 6, drawSides: 5)
         self.curve(withSides: 300000, withSize: 3, drawSides: 8)
-        
+
         //go back
         self.right(180)
         self.curve(withSides: 300000, withSize: 3, drawSides: 8)
-        
+
         //turn for the last straight line
         self.curve(withSides: 10, withSize: 7, drawSides: 5)
         self.curve(withSides: 300000, withSize: 3, drawSides: 4)
-    
+
         //little twist
         self.curve(withSides: -30, withSize: 5, drawSides: 8)
     }
-    
+
+
     func uppercaseC() {
     
         //moveing up
@@ -110,6 +111,7 @@ public extension Tortoise {
         
         //turn around
         self.curve(withSides: -30, withSize: 10, drawSides: 5)
+
     }
     
     func lowercaseh() {
@@ -147,10 +149,13 @@ public extension Tortoise {
         self.curve(withSides: 200000, withSize: 18, drawSides: 2)
         self.curve(withSides: -30, withSize: 10, drawSides: 2)
         
+        //turn around
         self.curve(withSides: -30, withSize: 3.25, drawSides: 18)
         
+        //loop rund
         self.curve(withSides: -40, withSize: 13, drawSides: 3)
     
+        //finish the loop
         self.curve(withSides: -30, withSize: 3, drawSides: 10)
     
         self.right(5)
