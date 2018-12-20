@@ -184,27 +184,27 @@ public extension Tortoise {
         
     }
 
-    func clock() {
+    func clock(scaleFactor scale : Double) {
         
         self.penColor(.amber)
         self.penSize(2)
         self.penUp()
         self.penDown()
-        self.curve(withSides: 15, withSize: 20 , drawSides: 15)
+        self.curve(withSides: 15, withSize: 20 * scale, drawSides: 15)
         self.right(90)
-        self.forward(95  )
+        self.forward(95 * scale)
         self.right(180)
         self.penUp()
-        self.forward(45 )
+        self.forward(45 * scale)
         self.penDown()
         self.right(90)
-        self.forward(50 )
+        self.forward(50 * scale)
         self.right(180)
         self.penUp()
-        self.forward(50 )
+        self.forward(50 * scale)
         self.penDown()
         self.left(100)
-        self.forward(30 )
+        self.forward(30 * scale)
         
     }
     
@@ -217,11 +217,11 @@ public extension Tortoise {
         
         self.goto(x, y)
         
-//        let size = self.random(20) + 5
+        let size = self.random(2)
+        
+        self.clock(scaleFactor: size)
         
         self.penDown()
-        
-//        self.clock(withSize: size)
         
     }
     
