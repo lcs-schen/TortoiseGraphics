@@ -184,4 +184,45 @@ public extension Tortoise {
         
     }
 
+    func clock() {
+        
+        self.penColor(.amber)
+        self.penSize(2)
+        self.penUp()
+        self.penDown()
+        self.curve(withSides: 15, withSize: 20 , drawSides: 15)
+        self.right(90)
+        self.forward(95  )
+        self.right(180)
+        self.penUp()
+        self.forward(45 )
+        self.penDown()
+        self.right(90)
+        self.forward(50 )
+        self.right(180)
+        self.penUp()
+        self.forward(50 )
+        self.penDown()
+        self.left(100)
+        self.forward(30 )
+        
+    }
+    
+    func randomClock()
+    {
+        self.penUp()
+        
+        let x = self.random(550) - 300
+        let y = self.random(550) - 300
+        
+        self.goto(x, y)
+        
+//        let size = self.random(20) + 5
+        
+        self.penDown()
+        
+//        self.clock(withSize: size)
+        
+    }
+    
 }

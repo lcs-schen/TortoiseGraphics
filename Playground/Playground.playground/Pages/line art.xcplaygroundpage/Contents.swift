@@ -25,7 +25,7 @@ canvas.drawing { turtle in
     // repeat 9 times around the origon
     for _ in 1...9 {
         turtle.right(40)
-        
+
     // Draw a enneagon
     for _ in 1...9 {
             turtle.right(40)
@@ -34,6 +34,7 @@ canvas.drawing { turtle in
             
         }
     }
+    
  turtle.hideTortoise()
 }
 

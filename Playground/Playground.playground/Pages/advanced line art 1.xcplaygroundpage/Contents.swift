@@ -1,20 +1,18 @@
-///: # With a tortoise 🐢
-//: [👉 With 2 tortoises 🐢🐢](@next)
 import PlaygroundSupport
 import TortoiseGraphics
 import CoreGraphics
 
-let myFrame = CGRect(x: 0, y: 0, width: 300, height: 300)
+let myFrame = CGRect(x: 0, y: 0, width: 550, height: 550)
 let canvas = PlaygroundCanvas(frame: myFrame)
-canvas.frameRate = 30
-canvas.color = .white
+canvas.frameRate = 1000
+canvas.color = .black
 PlaygroundPage.current.liveView = canvas
 
-
-
 canvas.drawing { t in
-
-    for _ in 1...85 {
+   
+    for _ in 1...300 {
+        
+       t.penColor(100, 200, 100)
         
         // Turn a random amount
         let turn = t.random(360)
@@ -31,5 +29,19 @@ canvas.drawing { t in
         t.penDown()
         
     }
+    
+    
+    
+    for _ in 1...20 {
+        
+    t.randomClock()
+        
+    }
+    
+    
+    
+    
+    
+   
     
 }
